@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My_first_functoin</title>
 </head>
+
 <body>
     <script>
-        function helloFrend (name) {
-            alert (`Hello, ${name}`);
+        function helloFrend(name) {
+            alert(`Hello, ${name}`);
         }
-        helloFrend ("Alex!");
-        function whatsUp (yourname, text = "who are you?") {
-            alert (yourname + text);
+        helloFrend("Alex!");
+        function whatsUp(yourname, text = "who are you?") { // here I applied the default value "text" // 
+            alert(yourname + text);
         }
-        whatsUp ('Alex,');
-        whatsUp ('Alex,', 'what`s up?');
-        function whoIsIt (newtext, newname = helloFrend ("Alex!")) {
-            alert (newtext + newname);
+        whatsUp('Alex,');
+        whatsUp('Alex,', 'what`s up?');
+        function whoIsIt(newtext, newname = helloFrend("Alex!")) { // here I have expressed the parameter through a function. But for some reason it does not work .. I will dig.// 
+            alert(newtext + newname);
         }
-        whoIsIt ('Greetings');
-        whoIsIt ('will you visit', ' your mother today?');
+        whoIsIt('Greetings');
+        whoIsIt('will you visit', ' your mother today?');
+        function yetAnother(yettext) {
+            if (yettext === undefined) { // if the parameter is missing //
+                alert("empty message");
+            }
+        }
+        yetAnother(); // empty message //
     </script>
 </body>
+
 </html>
