@@ -30,6 +30,12 @@
             }
         }
         yetAnother(); // empty message //
+        function yetAnother2(yettext2) {
+            alert(yettext2 ?? "unknow"); // with nullish coalescing operator // 
+        }
+        yetAnother2(); // unknow // 
+        yetAnother2("hi!");
+        yetAnother2(null); // unknow // 
     </script>
 </body>
 
