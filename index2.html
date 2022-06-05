@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let helloFrend = (name) => alert(`Hello, ${name}`);
+        helloFrend("Alex!");
+        let whatsUp = (yourname, text = "who are you?") => alert(yourname + text);
+        whatsUp('Alex,');
+        whatsUp('Alex,', 'what`s up?');
+        let whoIsIt = (newtext, newname = helloFrend("Alex!")) => alert(newtext + newname);
+        whoIsIt('Greetings ');
+        whoIsIt('will you visit', ' your mother today?');
+        let yetAnother = (yettext) => (yettext === undefined) ? alert("empty message") : alert("Okay!");
+        yetAnother(); // empty message //
+        yetAnother ("Ok");
+        let yetAnother2 = (yettext2) => alert(yettext2 ?? "unknow"); // with nullish coalescing operator // 
+        yetAnother2(); // unknow // 
+        yetAnother2("hi!");
+        yetAnother2(null); // unknow // 
+    </script>
+</body>
+
+</html>
